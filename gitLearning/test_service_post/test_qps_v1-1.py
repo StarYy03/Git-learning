@@ -103,6 +103,6 @@ def send_request():
 # send_request()
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
-  for i in range(5):
+  for i in range(10):
     executor.submit(send_request)
 
